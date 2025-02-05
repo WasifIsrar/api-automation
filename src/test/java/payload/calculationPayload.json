@@ -1,0 +1,13 @@
+{
+    "applicationFeeInCents": 0,
+    "chargeType": "destination",
+    "connectAccountId": "acct_1OCc7D2c1iW6q2JC",
+    "metadata": {
+       "tips":"",
+	   "paid":"",
+	   "paymentMethod":"",
+	   "total":""
+    },
+    "restaurantId": 995,
+    "type": "ticket"
+}

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+	<listeners>
+		<listener class-name="reporting.Listener"></listener>
+	</listeners>
+	<parameter name="environment" value="${environment}"></parameter>
+	<parameter name="restaurantId" value="${restaurantId}"></parameter>
+	<parameter name="posPin" value="${posPin}"></parameter>
+	<parameter name="deviceId" value="${deviceId}"></parameter>
+	<parameter name="employeeId" value="${employeeId}"></parameter>
+	<parameter name="username" value="${username}"></parameter>
+	<parameter name="businessId" value="${businessId}"></parameter>
+  <test thread-count="5" name="Test">
+    <classes>
+      <class name="test.WebDashPosTests">
+      </class>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

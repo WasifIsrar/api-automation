@@ -1,0 +1,18 @@
+{
+  "businessId": 697,
+  "restaurantId": 631,
+  "employee": {
+    "firstName": "APIs",
+    "lastName": "Manager",
+    "email": "apimanager2019@gmail.com",
+    "phoneNumber": "+12345678999",
+    "restaurantId": 631
+  },
+  "userRole": [
+    {
+      "roleId": 5,
+      "payType": "Hourly",
+      "salary": "20"
+    }
+  ]
+}

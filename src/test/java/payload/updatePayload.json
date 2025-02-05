@@ -1,0 +1,45 @@
+{
+   "autoGratuity":false,
+   "customItems":[
+      
+   ],
+   "fullfillmentTime":0,
+   "noOfGuests":5,
+   "note":"",
+   "orderSource":"mpos",
+   "orderStatus":"active",
+   "orderType":"dine-in",
+   "serveType":"fullServe",
+   "status":"pending",
+   "tableId":1,
+   "taxExemption":false,
+   "ticketItems":[
+      {
+         "categoryId": null,
+         "guest":"Shared",
+         "isItemPushed":false,
+         "itemId":1,
+         "itemName":"Around the World Flight",
+         "metaData":{
+            "allergen":[
+               
+            ],
+            "isUpdated":false,
+            "localItemId":1,
+            "metaDataPrimaryKet":0,
+            "modifierGroup":[
+               
+            ],
+            "selectedModifier":[
+               
+            ]
+         },
+         "price":175.0,
+         "quantity":"1",
+         "specialRequest":"",
+         "status":"pending",
+         "taxLinkedWithParentSetting":true,
+         "ticketId":3
+      }
+   ]
+}

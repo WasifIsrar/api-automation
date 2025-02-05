@@ -1,0 +1,61 @@
+{
+  "customItems": [],
+  "employeeId": "1",
+  "noOfGuests": 5,
+  "orderSource": "pos",
+  "orderStatus": "active",
+  "orderType": "dine-in",
+  "serveType": "fullServe",
+  "status": "pending",
+  "tableId": 34,
+  "taxExemption": false,
+  "ticketId": 345,
+  "ticketItems": [
+    {
+      "categoryId": 1,
+      "guest": "Shared",
+      "isItemPushed": false,
+      "isSplited": false,
+      "itemId": 1,
+      "itemName": "Around the World Flight",
+      "itemPrice": 175,
+      "metaData": {
+        "allergen": [],
+        "isUpdated": false,
+        "localItemId": 1,
+        "metaDataPrimaryKet": 0,
+        "modifierGroup": [],
+        "selectedModifier": []
+      },
+      "price": 175,
+      "quantity": "1",
+      "specialRequest": "",
+      "status": "pending",
+      "taxLinkedWithParentSetting": true,
+      "ticketId": 345
+    },
+    {
+      "categoryId": 1,
+      "guest": "Shared",
+      "isItemPushed": false,
+      "isSplited": false,
+      "itemId": 2,
+      "itemName": "Slider Flight",
+      "itemPrice": 19.95,
+      "metaData": {
+        "allergen": [],
+        "isUpdated": false,
+        "localItemId": 280,
+        "metaDataPrimaryKet": 0,
+        "modifierGroup": [],
+        "selectedModifier": []
+      },
+      "price": 19.95,
+      "quantity": "1",
+      "specialRequest": "",
+      "status": "pending",
+      "taxLinkedWithParentSetting": true,
+      "ticketId": 345
+    }
+  ]
+}

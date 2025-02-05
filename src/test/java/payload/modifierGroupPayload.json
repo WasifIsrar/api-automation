@@ -1,0 +1,26 @@
+{
+  "modifierGroupData": {
+    "groupName": "TRT",
+    "posDisplayName": "TRT",
+    "onPrem": true,
+    "offPrem": false,
+    "showOnPOS": false,
+    "showOnQR": false,
+    "showOnline": false,
+    "showOnThirdParty": false,
+    "showOnMpos": false,
+    "showOnKiosk": false,
+    "showOnNugget": false,
+    "showOnWebsite": false,
+    "showOnMenuBoard": false,
+    "restaurantId": 995
+  },
+  "modifierList": [
+    {
+      "value": 6,
+      "label": "test",
+      "sortOrder": 1
+    }
+  ],
+  "restaurantId":995
+}

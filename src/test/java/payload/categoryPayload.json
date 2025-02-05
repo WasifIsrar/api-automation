@@ -1,0 +1,27 @@
+{
+  "category": {
+    "categoryName": "test",
+    "posDisplayName": "test",
+    "kdsDisplayName": "test",
+    "kioskDisplayName": "",
+    "color": "#502626",
+    "image": "",
+    "kioskImage": "",
+    "restaurantId": 995
+  },
+  "subcategories": [],
+  "categoryItems": [],
+  "categoryTags": [],
+  "ModifierAndModifierGroup": [],
+  "imageUrl": "",
+  "onPrem": {
+    "isVisible": true,
+    "isDefault": true,
+    "channelVisibilityType": "OnPrem",
+    "device": "",
+    "scheduling": []
+  },
+  "offPrem": null,
+  "custom": [],
+  "restaurantId": 995
+}

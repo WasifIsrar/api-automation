@@ -1,0 +1,50 @@
+{
+  "restaurantId": 995,
+  "discountConfiguration": {
+    "name": "skjwjk",
+    "posName": "wsw",
+    "type": "fixed_percentage",
+    "value": 8,
+    "discountReason": [],
+    "isReasonPromptOnPos": false,
+    "isReasonRequired": false,
+    "isCommentRequired": false,
+    "permissionLevel": "Anyuser",
+    "isSingleDay": false,
+    "startDate": "2025-01-09T12:53:23.303Z",
+    "endDate": "2025-01-09T12:53:23.303Z",
+    "settingId": null,
+    "applicationType": "entire_check"
+  },
+  "discountConfigurationApplyTo": "entire_check",
+  "entireDiscount": {
+    "isExcluded": false,
+    "exceptionCategories": [],
+    "exceptionItems": [],
+    "isIncluded": false,
+    "inclusionCategories": [],
+    "inclusionItems": []
+  },
+  "menuDiscount": {
+    "hasMenu": false,
+    "hasCategory": false,
+    "hasItem": false,
+    "menus": [],
+    "categories": [],
+    "items": []
+  },
+  "daySchedule": {
+    "days": [
+      "Sun",
+      "Mon",
+      "Tue",
+      "Wed",
+      "Thu",
+      "Fri",
+      "Sat"
+    ],
+    "allDay": "allDay",
+    "startTime": "",
+    "endTime": ""
+  }
+}

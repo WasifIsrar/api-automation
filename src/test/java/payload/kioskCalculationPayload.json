@@ -1,0 +1,9 @@
+{
+  "applicationFeeInCents": 60,
+  "chargeType": "destination",
+  "connectAccountId": "acct_1OCc7D2c1iW6q2JC",
+  "metadata": {
+  },
+  "restaurantId":694,
+  "type":"cart"
+}

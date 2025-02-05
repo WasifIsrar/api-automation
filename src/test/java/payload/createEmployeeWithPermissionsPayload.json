@@ -1,0 +1,24 @@
+{
+  "createEmployeeData":{
+    "employee":{
+      "firstName":"dfdffg",
+      "lastName":"fgfg",
+      "phoneNumber":"+12123456778",
+      "email":"hil@yahoo.com"
+    },
+    "benefits":[
+
+    ],
+    "restaurantId":630,
+    "businessId":696,
+    "userRole":[
+      {
+        "roleId":"5",
+        "salary":34,
+        "payType":"Hourly"
+      }
+    ]
+},
+	"userPermissions": [],
+    "restaurantId": 995
+}

@@ -1,0 +1,16 @@
+{
+  "salesTax": {
+    "name": "edee",
+    "type": "percentage",
+    "disabled": false,
+    "isDefault": true,
+    "isTakeoutTaxEnabled": false,
+    "roundingConfig": "half_even",
+    "formula": {
+      "rate": 10,
+      "takeOutRate": 0
+    },
+    "restaurantId": 995
+  },
+  "restaurantId":995
+}

@@ -1,0 +1,30 @@
+{
+  "serviceCharge": {
+    "id": null,
+    "name": "Test",
+    "type": "percentage",
+    "minimumThresholdAmount": null,
+    "value": 7,
+    "waiveFeeThreshold": null,
+    "deliveryDistanceThreshold": null,
+    "showOnPOS": true,
+    "showOnQR": false,
+    "showOnline": false,
+    "showOnThirdParty": false,
+    "showOnMpos": true,
+    "showOnKiosk": false,
+    "config": {
+      "isChargeToOwner": false,
+      "isNonRevenue": true,
+      "isAutoApply": true,
+      "isMinimumThresholdAmount": false,
+      "isApplyOnDineIn": true,
+      "isApplyOnTakeAway": true,
+      "isApplicableOnDelivery": false,
+      "isApplyBeforeTax": true,
+      "isServiceChargeTaxed": true,
+      "minPartySize": 1
+    }
+  },
+  "restaurantId": 995
+}

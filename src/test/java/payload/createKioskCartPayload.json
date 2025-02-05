@@ -1,0 +1,33 @@
+{
+  "actualPrice": 175.0,
+  "customerId": "",
+  "customerUsername": "",
+  "items": [
+    {
+      "categoryId": 1,
+      "discountPercentage": 0,
+      "id": 1,
+      "isDiscount": false,
+      "itemPrice": 175.0,
+      "metaData": {
+        "selectedModifierGroups": [
+
+        ]
+      },
+      "metaDataKiosk": {
+        "selectedModifier": [
+
+        ]
+      },
+      "orderedQuantity": 1,
+      "special_instructions": ""
+    }
+  ],
+  "note": "",
+  "order_type": "dine-in",
+  "refreshToken": "",
+  "tipAmount": 35.0,
+  "tipPercentage": 0,
+  "totalBill": 191.41,
+  "totalTax": 16.41
+}

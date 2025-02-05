@@ -1,0 +1,13 @@
+{
+  "businessId": 696,
+  "restaurantId": 630,
+  "device": {
+    "deviceType": "pos",
+    "deviceName": "POS Device",
+    "deviceSerialNumber": "2345654323",
+    "ipAddress": "",
+    "printer": 0,
+    "kdsStations": [],
+    "table": null
+  }
+}

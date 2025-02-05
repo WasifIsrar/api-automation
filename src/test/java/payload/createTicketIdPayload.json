@@ -1,0 +1,18 @@
+{
+  "autoGratuity": false,
+  "customItems": [
+
+  ],
+  "employeeId": "588143d0-3021-7097-ea41-d7ce6ca25c17",
+  "enum": "dine-in",
+  "noOfGuests": 5,
+  "note": "",
+  "orderSource": "mpos",
+  "serveType": "fullServe",
+  "status": "pending",
+  "tableNumber": 20,
+  "taxExemption": false,
+  "ticketItems": [
+
+  ]
+}

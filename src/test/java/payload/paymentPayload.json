@@ -1,0 +1,13 @@
+{
+  "convenienceFee": 0,
+  "discount": 0,
+  "paid": 273.45,
+  "paymentMethod": "cash",
+  "paymentStatus": "full-paid",
+  "remainingAmount": 0,
+  "serviceChargesAmount": 43.75,
+  "subTotal": 175,
+  "tax": 54.7,
+  "tips": 0,
+  "total": 273.45
+}

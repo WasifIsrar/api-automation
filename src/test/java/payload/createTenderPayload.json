@@ -1,0 +1,7 @@
+{
+  "tenderName": "Managers with Tip",
+  "isManagerPermissionRequired": false,
+  "isTipAllowed": true,
+  "amount": 0,
+  "restaurantId": 630
+}

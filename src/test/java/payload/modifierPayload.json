@@ -1,0 +1,47 @@
+{
+  "modifier": {
+    "modifierName": "Modifier",
+    "posDisplayName": "Modifier",
+    "price": 0,
+    "prefix": "",
+    "restaurantId": 995,
+    "isNested": false,
+    "isOptional": false,
+    "canGuestSelectMoreModifiers": false,
+    "multiSelect": false,
+    "minSelector": 1,
+    "maxSelector": 1,
+    "noMaxSelection": false,
+    "addNested": false,
+    "modifierOptionPriceType": "NoCharge",
+    "pizzaSelection": false,
+    "isStockAvailable": true,
+    "onPrem": true,
+    "offPrem": false,
+    "showOnPos": false,
+    "showOnKiosk": false,
+    "showOnMpos": false,
+    "showOnQR": false,
+    "showOnline": false,
+    "showOnThirdParty": false,
+    "showOnNugget": false,
+    "showOnWebsite": false,
+    "showOnMenuBoard": false,
+    "limitIndividualModifierSelection": false,
+    "isSizeModifier": false,
+    "stockStatus": true
+  },
+  "modifierOptions": [
+    {
+      "id": 34,
+      "optionName": "MON",
+      "optionDisplayName": "MON",
+      "price": "0",
+      "isDefaultSelected": false,
+      "maxLimit": 1,
+      "sortOrder": 1
+    }
+  ],
+  "nestedModifiers": [],
+  "restaurantId":995
+}

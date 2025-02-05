@@ -1,0 +1,22 @@
+{
+	"menu": {
+		"menuName": "Test",
+		"posDisplayName": "Test",
+		"posButtonColor": "#361b1b",
+		"menuDescription": "abc",
+		"restaurantId": 995
+	},
+	"categories": [],
+	"onPrem": {
+		"isVisible": true,
+		"isDefault": true,
+		"channelVisibilityType": "OnPrem",
+		"device": "",
+		"scheduling": []
+	},
+	"offPrem": null,
+	"custom": [],
+	"restaurantId":995
+}
+
+
