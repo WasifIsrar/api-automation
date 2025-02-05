@@ -1,0 +1,100 @@
+name: dashboardPos
+on:
+  workflow_dispatch:
+    inputs:
+      environment_name:
+        description: Name of the environment
+        required: true
+        type: choice
+        options:
+          - internal
+          - qa
+          - uatv2
+          - stage
+      dbEnvironment:
+        description: Db Environment Name
+        required: true
+        type: choice
+        options:
+          - internal-v2
+          - main-v2
+          - uatv3
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    environment: main
+    steps:
+      - name: Checkout Repo
+        uses: actions/checkout@v4
+      - name: Set up JDK 17
+        uses: actions/setup-java@v4
+        with:
+          java-version: 17
+          distribution: 'temurin'
+      - name: Set Variable Based on Choice
+        run: |
+          if [ "${{ github.event.inputs.environment_name }}" == "internal" ]; then
+            echo "tenant=tenant_44" >> $GITHUB_ENV
+            echo "restaurantId=43" >> $GITHUB_ENV
+            echo "pin=910592" >> $GITHUB_ENV
+          elif [ "${{ github.event.inputs.environment_name }}" == "qa" ]; then
+            echo "restaurantId=1190" >> $GITHUB_ENV
+            echo "posPin=834023" >> $GITHUB_ENV
+            echo "deviceId=894174b97ed2febt" >> $GITHUB_ENV
+            echo "employeeId=c0f7bea3-cbd5-4a9e-b290-31e38c2ab50e" >> $GITHUB_ENV
+            echo "username=apibot.uatB@gmail.com" >> $GITHUB_ENV
+            echo "businessId=991" >> $GITHUB_ENV
+            echo "url=https://..." >> $GITHUB_ENV
+          elif [ "${{ github.event.inputs.environment_name }}" == "uatv2" ]; then
+            echo "restaurantId=995" >> $GITHUB_ENV
+            echo "posPin=858570" >> $GITHUB_ENV
+            echo "deviceId=fdfcea2256d86771" >> $GITHUB_ENV
+            echo "employeeId=3831e3e0-d0f1-70c3-9b7f-0c28421b0ecd" >> $GITHUB_ENV
+            echo "username=apibot.uatB@gmail.com" >> $GITHUB_ENV
+            echo "businessId=1057" >> $GITHUB_ENV
+            echo "url=https://${{ inputs.environment_name }}-..." >> $GITHUB_ENV
+          fi
+      - name: Login Manager
+        run: |
+          response=$(curl -X 'POST' \
+          '${{ env.url }}/api/authentication/login-with-pos?deviceId=${{ env.deviceId }}&logoutNeeded=true' \
+          -H 'accept: application/json' \
+          -H 'Content-Type: application/json' \
+          -d '{
+          "restaurantId": ${{ env.restaurantId }},
+          "posPin": ${{ env.posPin }} }')
+          echo "API response: $response"
+          access_token=$(echo $response | jq -r '.data.authChallengeResponse.AuthenticationResult.AccessToken')
+          id_token=$(echo $response | jq -r '.data.authChallengeResponse.AuthenticationResult.IdToken')
+          echo "ACCESS_TOKEN=$access_token" >> $GITHUB_ENV
+          echo "ID_TOKEN=$id_token" >> $GITHUB_ENV
+      - name: Clockin Manager
+        run: |
+          curl -X POST "${{ env.url }}/api/employee/timeLog/clock-in" \
+          -H "accept: application/json" \
+          -H "x-id-token: $ID_TOKEN" \
+          -H "Authorization: Bearer $ACCESS_TOKEN" \
+          -H "Content-Type: application/json" \
+          -d '{"roleId": 5}'
+      - name: Logout Manager
+        run: |
+          curl -X POST "${{ env.url }}/api/authentication/logout" \
+          -H "accept: application/json" \
+          -H "x-id-token: $ID_TOKEN" \
+          -H "Authorization: Bearer $ACCESS_TOKEN" \
+          -H "Content-Type: application/json"
+      - name: Run Dashboard_Pos Tests
+        if: always()
+        run: mvn -e test -DxmlFilePath=test-suites/dashPos.xml -Denvironment=${{ inputs.environment_name }} -DposPin=${{ env.posPin }}  -DrestaurantId=${{ env.restaurantId }} -DdeviceId=${{ env.deviceId }} -DemployeeId=${{ env.employeeId }} -Dusername=${{ env.username }} -DbusinessId=${{ env.businessId }} > test-output.log 2>&1
+      - name: Upload DashPos Report as artifact
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: report_dashPos
+          path: reports/*.html
+      - name: Upload Result File as artifact
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: maven-result
+          path: test-output.log
